@@ -33,7 +33,7 @@ Directory "data" contains the dataset studied in "The rise and fall of Varanopid
    contains the corresponding fossil ages
    
    
- - folders 'Empirical_dataset_model_spec' and 'Simulated_Dataset_model_spec' contain the model used to generate the simulated dataset and all the model specifications considered in the manuscript
+ - folders 'Simulated_dataset_models' and 'Varanopidae_models' contain the models considered in the manuscript
 
 
 A complete description of the options of the software is given below.
