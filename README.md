@@ -40,25 +40,25 @@ A complete description of the options of the software is given below.
 
 
 ------------
- getAIC 
+ getML 
 ------------
 
 --------------------------
 REQUIREMENT
 
-	'getAIC' requires the gsl libraries.
+	'getML' requires the gsl libraries.
 
 --------------------------
 COMPILING
 
 	Just type
-	> make getAIC
+	> make getML
 	in a console opened on the directory containing the source files to build the binary.
 
 --------------------------
 DESCRIPTION
 
-	'getAIC' returns the maximum likelihood and the AIC of a dataset under a model specification
+	'getML' returns the maximum likelihood and the corresponding parameters
 
 
 --------------------------
@@ -72,7 +72,7 @@ MANUAL
 
 NAME
 
-	getAIC - returns the maximum likelihood and the AIC of a dataset under a model specification
+	getAIC - eturns the maximum likelihood and the corresponding parameters wrt a dataset under a model specification
 	
 SYNOPSIS
 
@@ -80,7 +80,7 @@ SYNOPSIS
 
 DESCRIPTION
 
-	Return the maximum likelihood and the AIC of the dataset made of <tree(s)> and <fossil ages> under the model specification <model specification>.
+	Return the maximum likelihood and the corresponding parameters of the dataset made of <tree(s)> and <fossil ages> under the model specification <model specification>.
 
 	Options are
 	-w <speciation rate width> <extinction rate width> <fossilization rate width> <sampling probability width>
