@@ -1,13 +1,13 @@
 # list of executable files to produce
-GET_AIC = getAIC
+GET_ML = getML
 # .o files necessary to build the executables
 
 
-OBJ_GET_AIC =  MyR.o MyRandom.o PiecewiseModel.o Utils.o Tree.o Fossil.o FossilInt.o MinimizeNLOpt.o MCMCImportanceSamplingFossilInt.o Distribution.o FBDDensity.o GetAIC.o
+OBJ_GET_ML =  MyR.o MyRandom.o PiecewiseModel.o Utils.o Tree.o Fossil.o FossilInt.o MinimizeNLOpt.o MCMCImportanceSamplingFossilInt.o Distribution.o FBDDensity.o GetML.o
 
 ########### MODIFY ONLY TO CHANGE OPTIONS ############
 
-all = GET_AIC
+all = GET_ML
 
 # compiler and its options
 CC = gcc
@@ -19,10 +19,10 @@ LD = $(CC)
 
 ############ LIST OF EXECUTABLE TARGETS (MODIFY ONLY TO ADD AN EXECUTABLE) ##############
 
-all: Makefile.d $(DIST) $(TREE) $(ESTI) $(DRAW)
+all: Makefile.d $(GET_ML)
 
 # build the executable
-$(GET_AIC): $(OBJ_GET_AIC)
+$(GET_ML): $(OBJ_GET_ML)
 	$(LD) $^ -o $@ -L/usr/local/lib -L/usr/lib/ -lm -lgsl -lgslcblas -D_REENTRANT -L/usr/local/lib -L/usr/lib/  -lcairo -lnlopt -fopenmp  -g
 
 

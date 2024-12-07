@@ -72,33 +72,27 @@ MANUAL
 
 NAME
 
-	getAIC - eturns the maximum likelihood and the corresponding parameters wrt a dataset under a model specification
+	getAIC - returns the maximum likelihood and the corresponding parameters wrt a dataset under a model specification
 	
 SYNOPSIS
 
-	getAIC [OPTIONS] <tree(s)> <fossil ages> <model specification> [output File]
+	getAIC [OPTIONS] <tree(s)> <fossil ages> <model> [output File]
 
 DESCRIPTION
 
-	Return the maximum likelihood and the corresponding parameters of the dataset made of <tree(s)> and <fossil ages> under the model specification <model specification>.
+	Return the maximum likelihood and the corresponding parameters of the dataset made of <tree(s)> and <fossil ages> under the model <model> and write two files, one containing the max likelihood and the corresponding and on containing the corresponding exact fossil ages.
 
 	Options are
-	-w <speciation rate width> <extinction rate width> <fossilization rate width> <sampling probability width>
-		set the widths of the sliding windows used for sampling the speciation, extinction and fossilization rates and of the sampling probability during the MCMC
+	-o <file name> 
+		read the NLopt parameters in a file, e.g., ":SPE [0;1] :EXT [0;1] :FOS [0:1] :TRI 10 :TOL 1.E-5 :ITE 10000"
 	-i <speciation rate upper bound> <extinction rate  upper bound> <fossilization rate upper bound> <sampling probability upper bound>
-		set the upper bounds of the interval in which the speciation, extinction and fossilization rates and the sampling probability are uniformly drawn at the beginning of the MCMC (lower bounds are all 0)
-	-f <proportion>
-		set the proportion of moves in the parameters in the MCMC proposal (other moves are drawn uniformly amont the fossil ages)
-	-a <speciation proportion> <extinction proportion> <fossilization proportion>
-		set the relation proportion of moves in the speciation, the extinction and the fossilzation rates (thus in the sampling probability)
-	-s <number>
-		set the number of samples required to estimate the maximum likelihood
+		set the upper bounds of the interval in which the speciation, extinction and fossilization rates and the sampling probability are uniformly drawn before numerical optimisation (lower bounds are all 0)
 	-r <number>
-		set the random seed
+		set the number of replicas for the numerical optimisation
 	-h
 		display help
 
 EXAMPLE
 
-./getAIC -s 10000 -f 0.2  -a 0.25 0.25 0.25 -w 0.05 0.05 0.05 0.25 -i 0.5 0.5 0.5 1.  ../data/Simulated_dataset_tree.newick ../data/Simulated_dataset_fossils.csv ../data/Simulated_Dataset_model_spec/Simul_model_spec_0.txt 
+./getML -s 10000 -f 0.2  -a 0.25 0.25 0.25 -w 0.05 0.05 0.05 0.25 -i 0.5 0.5 0.5 1.  ../data/Simulated_dataset_tree.newick ../data/Simulated_dataset_fossils.csv ../data/Simulated_Dataset_model_spec/Simul_model_spec_0.txt 
 
