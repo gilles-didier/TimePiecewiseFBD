@@ -28,7 +28,7 @@ Directory "data" contains the dataset studied in "The rise and fall of Varanopid
    contains the corresponding fossil ages
    
  - 'Laurin & Didier 2024-10-18 varanopid project distr.nex'
-  contains the data matrix, topological constraint, the exhaustive set of most parsimonious trees, a random sample of 100 of these trees, and a majority-rule consensus tree of all most parsimonious trees.
+  contains the data matrix, the topological constraint, the exhaustive set of most parsimonious trees, a random sample of 100 of these trees, and a majority-rule consensus tree of all most parsimonious trees.
    
  - folders 'Simulated_dataset_models' and 'Varanopidae_dataset_models' contain the models considered in the manuscript
 
