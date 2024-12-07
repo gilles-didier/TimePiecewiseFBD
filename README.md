@@ -4,12 +4,7 @@ Maximum likelihood estimation of the skyline FBD model
 Software includes
 
  - 'getML'
-	computes the maximum likelihood and the corresponding parameters from a model, a single tree and the fossil stratigraphic intervals
-
-type
-
-	> make getML (or make all)
-	in a console opened on the src directory for compiling the software.
+	which computes the maximum likelihood and the corresponding parameters from a model, a single tree and the fossil stratigraphic intervals
 
 
 Directory "src" contains the C sources of the software
