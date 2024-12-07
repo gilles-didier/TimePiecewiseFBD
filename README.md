@@ -94,5 +94,5 @@ DESCRIPTION
 
 EXAMPLE
 
-./getML -r 50 working_directory/data/Varanopidae_dataset_trees_21.newick working_directory/data/Varanopidae_dataset_fossils.csv working_directory/data/Varanopidae_dataset_models/model_M0.txt bof
+./getML -r 50 working_directory/data/Varanopidae_dataset_trees_21.newick working_directory/data/Varanopidae_dataset_fossils.csv working_directory/data/Varanopidae_dataset_models/model_M0.txt results
 
