@@ -67,7 +67,7 @@ MANUAL
 
 NAME
 
-	getML - returns the maximum likelihood and the corresponding parameters wrt a dataset under a model specification
+	getML
 	
 SYNOPSIS
 
@@ -81,7 +81,7 @@ DESCRIPTION
 	-o <file name> 
 		read the NLopt parameters in a file cotaining them, e.g., ':SPE [0;1] :EXT [0;1] :FOS [0:1] :TRI 10 :TOL 1.E-5 :ITE 10000'
 	-i <speciation rate upper bound> <extinction rate  upper bound> <fossilization rate upper bound> <sampling probability upper bound>
-		set the upper bounds of the interval in which the speciation, extinction and fossilization rates and the sampling probability are uniformly drawn before numerical optimisation (lower bounds are all 0)
+		set the upper bounds of the intervals in which the speciation, extinction and fossilization rates and the sampling probability are uniformly drawn before numerical optimisation (lower bounds are all 0)
 	-r <number>
 		set the number of replicas for the numerical optimisation
 	-h
