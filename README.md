@@ -18,17 +18,17 @@ Directory "data" contains the dataset studied in "The rise and fall of Varanopid
  - 'Simulated_dataset_fossils.csv'
    contains the  corresponding fossil ages
 
- - 'Varanopidae_trees_17.newick'
+ - 'Varanopidae_dataset_trees_17.newick'
   contains 100 equiparsimonious trees of 17 Varanopidae
   
- - 'Varanopidae_trees_21.newick'
+ - 'Varanopidae_dataset_trees_21.newick'
   contains 100 equiparsimonious trees of 21 Varanopidae
 
- - 'Varanopidae_fossils.csv'
+ - 'Varanopidae_dataset_fossils.csv'
    contains the corresponding fossil ages
    
    
- - folders 'Simulated_dataset_models' and 'Varanopidae_models' contain the models considered in the manuscript
+ - folders 'Simulated_dataset_models' and 'Varanopidae_dataset_models' contain the models considered in the manuscript
 
 
 A complete description of the options of the software is given below.
