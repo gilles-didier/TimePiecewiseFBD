@@ -72,11 +72,11 @@ MANUAL
 
 NAME
 
-	getAIC - returns the maximum likelihood and the corresponding parameters wrt a dataset under a model specification
+	getML - returns the maximum likelihood and the corresponding parameters wrt a dataset under a model specification
 	
 SYNOPSIS
 
-	getAIC [OPTIONS] <tree(s)> <fossil ages> <model> [output File]
+	getML [OPTIONS] <tree(s)> <fossil ages> <model> [output File]
 
 DESCRIPTION
 
@@ -84,7 +84,7 @@ DESCRIPTION
 
 	Options are
 	-o <file name> 
-		read the NLopt parameters in a file, e.g., ":SPE [0;1] :EXT [0;1] :FOS [0:1] :TRI 10 :TOL 1.E-5 :ITE 10000"
+		read the NLopt parameters in a file cotaining them, e.g., ':SPE [0;1] :EXT [0;1] :FOS [0:1] :TRI 10 :TOL 1.E-5 :ITE 10000'
 	-i <speciation rate upper bound> <extinction rate  upper bound> <fossilization rate upper bound> <sampling probability upper bound>
 		set the upper bounds of the interval in which the speciation, extinction and fossilization rates and the sampling probability are uniformly drawn before numerical optimisation (lower bounds are all 0)
 	-r <number>
@@ -94,5 +94,5 @@ DESCRIPTION
 
 EXAMPLE
 
-./getML -s 10000 -f 0.2  -a 0.25 0.25 0.25 -w 0.05 0.05 0.05 0.25 -i 0.5 0.5 0.5 1.  ../data/Simulated_dataset_tree.newick ../data/Simulated_dataset_fossils.csv ../data/Simulated_Dataset_model_spec/Simul_model_spec_0.txt 
+./getML -r 50 working_directory/data/Varanopidae_dataset_trees_21.newick working_directory/data/Varanopidae_dataset_fossils.csv working_directory/data/Varanopidae_dataset_models/model_M0.txt bof
 
