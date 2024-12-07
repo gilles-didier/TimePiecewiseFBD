@@ -30,7 +30,6 @@ Directory "data" contains the dataset studied in "The rise and fall of Varanopid
  - 'Laurin & Didier 2024-10-18 varanopid project distr.nex'
   contains the topological constraint and the exhaustive set of most parsimonious trees
    
-   
  - folders 'Simulated_dataset_models' and 'Varanopidae_dataset_models' contain the models considered in the manuscript
 
 
